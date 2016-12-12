@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="porject3.css"/>
+    <title>Project 3</title>
+  </head>
+  <body>
+    <h1>Welcome to Madlib Madness.</h1>
+      <p>To begin please fill out the boxes below to start your first story.</p>
+  </body>
+  <body>
+    <div style="width:100">
+      <div style="float: left; width: 40%">
+        <p>Enter an adjective: <input type="text" id="adj01"/></p>
+        <p>Enter a number: <input type="text" id="num01"/></p>
+        <p>Enter an animal: <input type="text" id="ani01"/></p>
+        <p>Enter a color: <input type="text" id="col01"/></p>
+        <p>Enter a verb ending in ing: <input type="text" id="ver01"/></p>
+        <p>Enter a number: <input type="text" id="num02"/></p>
+        <p>Enter a type of food: <input type="text" id="foo01"/></p>
+        <p>Enter an adjective: <input type="text" id="adj02"/></p>
+        <p>Enter an adjective: <input type="text" id="adj03"/></p>
+        <p>Enter a name: <input type="text" id="nam01"/></p>
+        <p>Enter an animal: <input type="text" id="ani02"/></p>
+        <p>Enter an adjective: <input type="text" id="adj04"/></p>
+        <p>Enter a verb: <input type="text" id="ver02"/></p>
+        <p>Enter an adjective: <input type="text" id="adj05"/></p>
+        <button onclick="myAnswers();">Done</button>
+      </div>
+      <div style="float: right; width: 60%">
+        <h2>A Day at the Zoo</h2>
+        <img src="https://www.czs.org/custom.czs/media/BZ_Home/tickets-475.jpg">
+          <p>Image source www.czs.org</p>
+          <script>
+          function myAnswers(){
+
+            var adjective01;
+            adjective01 = document.getElementById("adj01").value;
+            var adjective02;
+            adjective02 = document.getElementById("adj02").value;
+            var adjective03;
+            adjective03 = document.getElementById("adj03").value;
+            var adjective04;
+            adjective04 = document.getElementById("adj04").value;
+            var adjective05;
+            adjective05 = document.getElementById("adj05").value;
+            var number01;
+            number01 = document.getElementById("num01").value;
+            var number02;
+            number02 = document.getElementById("num02").value;
+            var animal01;
+            animal01 = document.getElementById("ani01").value;
+            var animal02;
+            animal02 = document.getElementById("ani02").value;
+            var color01;
+            color01 = document.getElementById("col01").value;
+            var verb01;
+            verb01 = document.getElementById("ver01").value;
+            var verb02;
+            verb02 = document.getElementById("ver02").value;
+            var food01;
+            food01 = document.getElementById("foo01").value;
+            var name01;
+            name01 = document.getElementById("nam01").value;
+
+
+
+            document.getElementById("final").innerHTML = "One "+ adjective01 + " day, I went to the zoo and saw "+ number01 + " animals. One of my favorite animals that I saw was the "+ animal01 + ". It was " +color01 + " and was " +verb01 + " all over the place. After walking for " +number02 + " hours, we stopped to eat at the " + food01 +" shack. I tried the famous "+ adjective02 +" milkshake, and it tasted " + adjective03 + ". At the end of the day, zoo keeper " + name01 + " brought out a " + animal02 + "and let us all pet it. It felt very " + adjective04 + " and tried to " + verb02 + " away from the trainer. Overall I had a " + adjective05 + " day.";
+            }
+
+            </script>
+
+
+
+
+
+        <p id="final"> </p>
+        <p>If you are ready to go to the next page</p>
+        <a href="page2.html">Click Here</a>
+      </div>
+    </div>
